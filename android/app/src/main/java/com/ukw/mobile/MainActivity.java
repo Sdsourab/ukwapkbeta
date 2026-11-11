@@ -298,7 +298,7 @@ public final class MainActivity extends Activity {
     }
 
     private Button button(String label, int background, int foreground) {
-        Button b = new Button(this); b.setText(label); b.setTextAllCaps(false); b.setTextSize(14);
+        Button b = new Button(this); b.setText(label); b.setAllCaps(false); b.setTextSize(14);
         b.setTypeface(null, Typeface.BOLD); b.setTextColor(foreground); b.setBackground(round(background, 14));
         b.setPadding(dp(10), 0, dp(10), 0); return b;
     }

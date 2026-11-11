@@ -1,0 +1,23 @@
+{
+  "name": "@ukw/pwa",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ukw/anchor-engine": "*",
+    "@ukw/database": "*",
+    "@ukw/domain": "*",
+    "@ukw/graph-engine": "*",
+    "@ukw/sync-engine": "*",
+    "@ukw/ui": "*",
+    "@xyflow/react": "^12.12.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.18.5"
+  }
+}

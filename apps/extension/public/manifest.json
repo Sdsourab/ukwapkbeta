@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Universal Knowledge Workspace",
+  "short_name": "UKW",
+  "version": "0.1.0",
+  "description": "Highlight, annotate and connect knowledge on any page and in AI chats. Local-first: your data stays on your device.",
+  "minimum_chrome_version": "111",
+  "icons": { "16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png", "128": "icons/icon-128.png" },
+  "action": {
+    "default_title": "Universal Knowledge Workspace",
+    "default_popup": "popup.html",
+    "default_icon": { "16": "icons/icon-16.png", "32": "icons/icon-32.png" }
+  },
+  "background": { "service_worker": "background.js", "type": "module" },
+  "content_scripts": [
+    { "matches": ["http://*/*", "https://*/*"], "js": ["content.js"], "run_at": "document_idle", "all_frames": false }
+  ],
+  "permissions": ["contextMenus", "unlimitedStorage"],
+  "options_ui": { "page": "dashboard.html#/settings", "open_in_tab": true },
+  "commands": {
+    "toggle-sidebar": { "suggested_key": { "default": "Alt+S" }, "description": "Open or close the workspace sidebar" },
+    "highlight-selection": { "suggested_key": { "default": "Alt+H" }, "description": "Highlight the selected text" },
+    "add-note": { "suggested_key": { "default": "Alt+N" }, "description": "Highlight the selection and add a note" },
+    "add-bookmark": { "suggested_key": { "default": "Alt+B" }, "description": "Bookmark this spot on the page" },
+    "open-palette": { "description": "Open the command palette" }
+  },
+  "content_security_policy": { "extension_pages": "script-src 'self'; object-src 'self'; base-uri 'self'; form-action 'self'" }
+}

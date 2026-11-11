@@ -1,0 +1,28 @@
+{
+  "product": "Universal Knowledge Workspace",
+  "version": "1.0.0",
+  "ai_features_in_scope": false,
+  "files": [
+    "01-overview.md",
+    "02-requirements.md",
+    "03-architecture.md",
+    "04-ui-ux.md",
+    "05-database.md",
+    "06-features.md",
+    "07-business-logic.md",
+    "08-api.md",
+    "09-roadmap.md",
+    "10-task-tracker.md",
+    "11-testing.md",
+    "12-security.md",
+    "13-deployment.md",
+    "14-changelog.md",
+    "15-known-issues.md",
+    "16-ai-context.md",
+    "17-coding-standards.md",
+    "18-decision-log.md",
+    "DOCUMENTATION-STYLE.md",
+    "README.md"
+  ],
+  "created_for": "Product planning and solo development"
+}
